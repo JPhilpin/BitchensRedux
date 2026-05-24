@@ -1,3 +1,13 @@
+/* ============================
+   Custom CSS
+   ...
+   ============================ */
+
+/* ============================
+   Blockquote, Cite and CSS (Global)
+   ...
+   ============================ */
+
 blockquote {
   background-color: #125993;
   padding: 2rem 1.5rem !important;
@@ -19,4 +29,23 @@ cite,
   font-weight: bold;
   font-size: 0.9rem;
   margin: -1rem 2rem 2rem 2rem !important;
+}
+
+
+/* ============================
+   LINKS (Global)
+   Blue default, gold hover with black text
+   ============================ */
+
+a {
+  color: #125993;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 0.125rem 0.25rem;
+}
+
+a:hover {
+  background-color: #FFBF00;
+  color: #000;
+  text-decoration: none;
 }
