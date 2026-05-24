@@ -62,6 +62,34 @@ a:hover {
 }
 
 /* ============================
+   EMPHASIS & HIGHLIGHTING
+   Italic blue for em, gold background for high
+   ============================ */
+
+em {
+  font-style: italic;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+high {
+  background-color: var(--color-accent);
+  padding: 0;
+}
+
+/* ============================
+   POST TITLE
+   Spacing above title matches excerpt spacing
+   ============================ */
+
+.post-title,
+.h-entry > h2,
+h2.p-name {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ============================
    EXCERPTS & SUMMARIES
    Rust card with white text, all 4 corners rounded
    ============================ */
@@ -71,7 +99,7 @@ a:hover {
 .excerpt {
   background-color: var(--color-rust);
   padding: 2rem 1.5rem !important;
-  margin: 2rem 2rem !important;
+  margin: 1rem 2rem 2rem 2rem !important;
   font-style: italic;
   color: var(--color-text-light);
   border-radius: 20px !important;
@@ -83,4 +111,79 @@ a:hover {
 .excerpt p {
   margin: 0 !important;
   color: var(--color-text-light) !important;
+}
+
+/* ============================
+   POST DATE
+   Inline text styling with gold hover
+   ============================ */
+
+time,
+.dt-published,
+.post-date {
+  display: inline-block !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  background: none !important;
+  padding: 0 !important;
+  color: var(--color-slate) !important;
+  font-size: 0.9rem !important;
+}
+
+time:hover,
+.dt-published:hover,
+.post-date:hover {
+  background-color: var(--color-accent) !important;
+  color: var(--color-text-dark) !important;
+  border-radius: 5px !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+/* ============================
+   HIDE DECORATIVE ELEMENTS
+   Remove Sumo's link decoration symbols
+   ============================ */
+
+.u-url::before,
+.u-url::after,
+a[class*="u-url"]::before,
+a[class*="u-url"]::after {
+  display: none !important;
+}
+
+/* ============================
+   INDEX PAGE - POST CARDS
+   White cards with rounded corners and shadow
+   ============================ */
+
+article,
+.h-entry {
+  background-color: var(--color-bg-light) !important;
+  color: var(--color-text-dark) !important;
+  padding: 1.5rem 2rem !important;
+  margin: 2rem auto !important;
+  border-radius: 20px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  max-width: 95% !important;
+  width: 95% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+article img,
+.h-entry img {
+  border-radius: 15px !important;
+  margin: 1rem auto !important;
+  width: 90% !important;
+  height: auto !important;
+}
+
+/* ============================
+   HIDE HORIZONTAL RULES
+   Remove hr elements between post cards
+   ============================ */
+
+hr {
+  display: none !important;
 }
