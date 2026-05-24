@@ -15,7 +15,6 @@
   --color-bg-dark: #000;          /* Black background */
 }
 
-
 /* ============================
    BLOCKQUOTE & CITATION
    Blue card with white text, unified block
@@ -60,4 +59,28 @@ a:hover {
   background-color: var(--color-accent);
   color: var(--color-text-dark);
   text-decoration: none;
+}
+
+/* ============================
+   EXCERPTS & SUMMARIES
+   Rust card with white text, all 4 corners rounded
+   ============================ */
+
+.p-summary,
+.post-summary,
+.excerpt {
+  background-color: var(--color-rust);
+  padding: 2rem 1.5rem !important;
+  margin: 2rem 2rem !important;
+  font-style: italic;
+  color: var(--color-text-light);
+  border-radius: 20px !important;
+  border: none !important;
+}
+
+.p-summary p,
+.post-summary p,
+.excerpt p {
+  margin: 0 !important;
+  color: var(--color-text-light) !important;
 }
