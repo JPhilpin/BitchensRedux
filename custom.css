@@ -1,7 +1,20 @@
 /* ============================
-   CUSTOM CSS - BitchensRedux
-   Blockquotes, citations, and links
+   CSS CUSTOM PROPERTIES (Variables)
+   Brand colours for consistency across the site
    ============================ */
+
+:root {
+  --color-primary: #125993;      /* Brand blue */
+  --color-secondary: #000;        /* Black */
+  --color-accent: #FFBF00;        /* Gold/amber */
+  --color-rust: #7f2f19;          /* Rust (replies section) */
+  --color-slate: #7a8f99;         /* Slate (metadata) */
+  --color-text-light: #fff;       /* White text */
+  --color-text-dark: #000;        /* Black text */
+  --color-bg-light: #fff;         /* White background */
+  --color-bg-dark: #000;          /* Black background */
+}
+
 
 /* ============================
    BLOCKQUOTE & CITATION
@@ -9,19 +22,19 @@
    ============================ */
 
 blockquote {
-  background-color: #125993;
+  background-color: var(--color-primary);
   padding: 2rem 1.5rem !important;
   margin: 2rem 2rem 0 2rem !important;
   font-style: italic;
-  color: #fff;
+  color: var(--color-text-light);
   border-radius: 20px 20px 0 0 !important;
   border: none !important;
 }
 
 cite,
 .attribution {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-secondary);
+  color: var(--color-text-light);
   display: block;
   text-align: right;
   padding: 1rem 1.5rem !important;
@@ -37,14 +50,14 @@ cite,
    ============================ */
 
 a {
-  color: #125993;
+  color: var(--color-primary);
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
   padding: 0.125rem 0.25rem;
 }
 
 a:hover {
-  background-color: #FFBF00;
-  color: #000;
+  background-color: var(--color-accent);
+  color: var(--color-text-dark);
   text-decoration: none;
 }
