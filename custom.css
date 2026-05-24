@@ -1,11 +1,11 @@
 blockquote {
   background-color: #125993;
-  padding: 1rem;
-  margin: 1rem 0 0 0;
+  padding: 2rem 1.5rem !important;
+  margin: 2rem 2rem 0 2rem !important;
   font-style: italic;
   color: #fff;
-  border-radius: 20px 20px 0 0;
-  border: none;
+  border-radius: 20px 20px 0 0 !important;
+  border: none !important;
 }
 
 cite,
@@ -14,9 +14,9 @@ cite,
   color: #fff;
   display: block;
   text-align: right;
-  padding: 1rem;
-  border-radius: 0 0 20px 20px;
+  padding: 1rem 1.5rem !important;
+  border-radius: 0 0 20px 20px !important;
   font-weight: bold;
   font-size: 0.9rem;
-  margin: -1.01rem 0 1rem 0;
+  margin: -1rem 2rem 2rem 2rem !important;
 }
