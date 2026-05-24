@@ -1,11 +1,11 @@
 /* ============================
-   Custom CSS
-   ...
+   CUSTOM CSS - BitchensRedux
+   Blockquotes, citations, and links
    ============================ */
 
 /* ============================
-   Blockquote, Cite and CSS (Global)
-   ...
+   BLOCKQUOTE & CITATION
+   Blue card with white text, unified block
    ============================ */
 
 blockquote {
@@ -31,10 +31,9 @@ cite,
   margin: -1rem 2rem 2rem 2rem !important;
 }
 
-
 /* ============================
    LINKS (Global)
-   Blue default, gold hover with black text
+   Blue default, gold hover background with black text
    ============================ */
 
 a {
